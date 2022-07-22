@@ -295,6 +295,10 @@ button:active {
   .selected-item {
     top: 380px;
   }
+
+  .selected {
+    display: none;
+  }
 }
 
 /* Media Query: Large Smartphone (Vertical) */
@@ -307,6 +311,10 @@ button:active {
 
   .selected-item {
     top: 345px;
+  }
+
+  .selected {
+    display: none;
   }
 
   .header {
@@ -336,7 +344,7 @@ button:active {
   }
 
   .selection-footer {
-    top: 183px;
+    top: 185px;
   }
 }
 
@@ -344,5 +352,18 @@ button:active {
 @media screen and (max-width: 376px) {
   .best-score {
     left: 232px;
+  }
+
+  .selected {
+    display: none;
+  }
+
+  .best-score {
+    font-size: 0.9rem;
+    left: 230px;
+  }
+
+  .selection-footer {
+    top: 103px;
   }
 }
