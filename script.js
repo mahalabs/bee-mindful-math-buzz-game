@@ -203,7 +203,7 @@ function createEquations() {
     secondNumber = getRandomInt(9);
     const equationValue = firstNumber * secondNumber;
     wrongFormat[0] = `${firstNumber} x ${secondNumber + 1} = ${equationValue}`;
-    wrongFormat[1] = `${firstNumber} x ${secondNumber} = ${equationValue - 1}`;
+    wrongFormat[1] = equationValue - 1 < 0 ? `${firstNumber} x ${secondNumber} = ${equationValue}` : `${firstNumber} x ${secondNumber} = ${equationValue - 1}`;
     wrongFormat[2] = `${firstNumber + 1} x ${secondNumber} = ${equationValue}`;
     const formatChoice = getRandomInt(3);
     const equation = wrongFormat[formatChoice];

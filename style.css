@@ -296,9 +296,9 @@ button:active {
     top: 380px;
   }
 
-  .selected {
+  /* .selected {
     display: none;
-  }
+  } */
 }
 
 /* Media Query: Large Smartphone (Vertical) */
